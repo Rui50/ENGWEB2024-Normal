@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    .w3-card-4
+        .w3-container.w3-teal
+            h1 Contrato #{contrato._id}
+
+        .w3-container
+            ul.w3-ul.w3-card-4(style="width:50%")
+                li 
+                    b nAnuncio: 
+                    span= contrato['nAnuncio']
+                li
+                    b tipoprocedimento: 
+                    span= contrato['tipoprocedimento']
+                li
+                    b objectoContrato: 
+                    span= contrato['objectoContrato']
+                li
+                    b dataPublicacao: 
+                    span= contrato['dataPublicacao']
+                li
+                    b dataCelebracaoContrato: 
+                    span= contrato['dataCelebracaoContrato']
+                li
+                    b precoContratual: 
+                    span= contrato['precoContratual']
+                li
+                    b prazoExecucao: 
+                    span= contrato['prazoExecucao']
+                li
+                    b NIPC_entidade_comunicante: 
+                    span= contrato['NIPC_entidade_comunicante']
+                li
+                    b entidade_comunicante: 
+                    span= contrato['entidade_comunicante']
+                li
+                    b fundamentacao: 
+                    span= contrato['fundamentacao']
+
+        footer.w3-container.w3-teal
+            address 
+                span Gerado para o teste de 2024 ENGWEB - [
+                a(href="/") Voltar
+                span ]
